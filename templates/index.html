@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content="device-width, initial-scale=1.0">
+    <meta http-equiv='X-UA-Compatible' content="ie=edge">
+    <title>Special Week Classifier</title>
+    <link rel='stylesheet' href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <!-- <img class='header_img' src="https://aidemyexstorage.blob.core.windows.net/aidemycontents/1621500180546399.png" alt="Aidemy"> -->
+        <a class='header-logo' href="#">Special Week Classifier</a>
+    </header>
+
+    <div class='main'>    
+        <h2> AIが送信された画像を識別し、「スペシャルウィーク」かどうかを判別します。<br>※スペシャルウィークはウマ娘に登場するキャラクターです。</h2>
+        <p><b>以下に、画像を送信してください</b></p>
+        <form method='POST' enctype="multipart/form-data">
+            <input class='file_choose' type="file" name="file">
+            <input class='btn' value="画像送信" type="submit">
+        </form>
+        <div class='answer'>{{answer}}</div>
+    </div>
+
+    <footer>
+        <img class='footer_img' src="./static/uma_black.jpg" alt="Aidemy">
+        <img class='footer_img' src="./static/uma_white.jpg" alt="Aidemy">
+        <img class='footer_img' src="./static/uma_black.jpg" alt="Aidemy">
+        <small>&copy; 2021 Aidemy, inc.</small>   
+    </footer>
+</body>
+</html>
