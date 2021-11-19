@@ -25,11 +25,11 @@ model = load_model('./model.h5')#学習済みモデルをロード
 def upload_file():
     if request.method == 'POST':
         if 'file' not in request.files:
-            flash('ファイルがありません')
+            # flash('ファイルがありません')
             return redirect(request.url)
         file = request.files['file']
         if file.filename == '':
-            flash('ファイルがありません')
+            # flash('ファイルがありません')
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
